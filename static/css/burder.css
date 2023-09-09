@@ -1,0 +1,69 @@
+.nav-toggle {
+  align-self: end;
+  scale: 0.5;
+  background: transparent;
+  border: 1px solid transparent;
+  margin: 7px 0;
+  cursor: pointer;
+  display: none;
+  /*
+   * FOR PRESENTATION ONLY
+   * Centers everything, remove for
+   * practical purposes.
+  */
+  transform: translate(-50%, -50%);
+}
+
+.nav-toggle:focus {
+  outline-width: 0;
+}
+
+.nav-toggle [class*=bar-] {
+  background: linear-gradient(rgb(234, 81, 51), rgb(195, 54, 162));
+  display: block;
+  transform: rotate(0deg);
+  transition: 0.2s ease all;
+  /* 
+   * ENLARGED FOR PRESENTATION
+   * Keep these values at the same proportion 
+   * for it to look correct
+  */
+  border-radius: 2px;
+  height: 8px;
+  width: 100px;
+  margin-bottom: 16px;
+  /*
+   * Practical values:
+   * border-radius: 2px;
+   * height: 2px;
+   * width: 25px;
+   * margin-bottom: 4px;
+  */
+}
+
+.nav-toggle .bar-bot {
+  margin-bottom: 0;
+}
+
+.opened .bar-top {
+  transform: rotate(45deg);
+  transform-origin: 15% 15%;
+}
+
+.opened .bar-mid {
+  opacity: 0;
+}
+
+.opened .bar-bot {
+  transform: rotate(-45deg);
+  transform-origin: 15% 95%;
+}
+
+@media only screen and (max-width: 976px) {
+  .nav-toggle {
+    display: block;
+  }
+  .nav_bar {
+    display: none;
+  }
+}/*# sourceMappingURL=burder.css.map */
