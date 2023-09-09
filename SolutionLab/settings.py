@@ -27,7 +27,7 @@ SECRET_KEY = 'reosgbpprd!7gu3-h2%#gao(z^!u7j*m)f!2lw72avs$6(kpip'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["solutionlab.pro"]
 
 PROJECT_DIR = os.path.dirname(__file__)
 # Application definition
